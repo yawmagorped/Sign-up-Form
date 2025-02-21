@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Toward";
+    src: url(./fonts/TOWARD.otf);
+    src: url(./fonts/TOWARD.ttf);
+}
+
+body {
+    background-color: rgb(119, 119, 119);
+}
