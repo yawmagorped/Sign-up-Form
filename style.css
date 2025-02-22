@@ -4,6 +4,110 @@
     src: url(./fonts/TOWARD.ttf);
 }
 
+:root {
+    --patriotic-blue: #396185;
+    --patriotic-red: #D73823;
+    --patriotic-white: #cacfcb;
+
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.side-bar {
+    flex: 1;
+    position: relative;
+}
+
+.title, .side-bar > footer {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.534);
+    color: rgb(211, 211, 211);
+} 
+
+.side-bar > footer {
+    bottom: 0px;
+    background-color: #000000b7;
+}
+
+.title {
+    top: 25vh;
+    font-family: "Toward";
+    font-size: 48px;
+    padding: 16px 0;
+}
+
+.content-container {
+    flex: 2;
+    padding-top:15vh;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    justify-content: space-around;
+}
+
+.content-container > * {
+    padding: 3vh 15vw 3vh 2vw;
+}
+
+.content-middle {
+    background-color: #e5ebe5;
+    box-shadow:0px 5px 10px rgba(0, 0, 0, 0.144);
+}
+
 body {
-    background-color: rgb(119, 119, 119);
+    margin: 0;
+    
+    background-color: var(--patriotic-white);
+    display: flex;
+}
+
+.side-bar img {
+    width: 100%;
+}
+
+.input-container {
+    font-size: .6rem;
+    display: flex;
+    gap: 72px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 16px 0;
+}
+
+input {
+    color: var(--patriotic-blue);
+    font-size: .7rem;
+    height: 24px;
+    border-radius: 4px;
+    border: 1px solid var(--patriotic-white);
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--patriotic-blue);
+}
+
+button {
+    padding: 16px 48px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--patriotic-blue);
+    font-size: 1rem;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: var(--patriotic-blue);
+}
+
+:invalid {
+    border-color: var(--patriotic-red);
 }

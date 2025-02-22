@@ -28,26 +28,38 @@
         <div class="content-middle">
             <form>
                 <caption>Let's scheme!</caption>
-                <div>
-                    <label for="user-first-name">FIRST NAME</label>
-                    <input type="text" name="user-first-name">
+                <div class="input-container">
+                    <div class="input">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="user-first-name" minlength="3" maxlength="20" id="first-name">
+                    </div>
 
-                    <label for="user-last-name">LAST NAME</label>
-                    <input type="text" name="user-last-name">
+                    <div class="input">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="user-last-name" minlength="3" maxlength="20" id="last-name">
+                    </div>
                 </div>
-                <div>
-                    <label for="user-email">EMAIL</label>
-                    <input type="email" name="user-email">
+                <div class="input-container">
+                    <div class="input">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="user-email" id="email">
+                    </div>
 
-                    <label for="user-phone-number">PHONE NUMBER</label>
-                    <input type="tel" name="user-phone-number">
+                    <div class="input">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" name="user-phone-number" id="phone-number" minlength="8">
+                    </div>
                 </div>
-                <div>
-                    <label for="upser-password">PASSWORD</label>
-                    <input type="password" name="password">
+                <div class="input-container">
+                    <div class="input">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="user-password" id="password">
+                    </div>
 
-                    <label for="confirmation">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirmation">
+                    <div class="input">
+                        <label for="confirmation">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirmation" id="confirmation">
+                    </div>
                 </div>
             </form>
         </div>
